@@ -1,0 +1,209 @@
+/* core */
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.section__title{
+    margin-top: 96px;
+    color: #555555;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.section__text {
+    margin-top: 40px;
+    text-align: center;
+    font-family: serif;
+    color: #555555;
+    font-weight: 500;
+    font-size: 18px;
+}
+.section__btn {    
+    margin-top: 40px;
+    margin-bottom: 96px;
+    text-align: center;
+}
+.section__btn a{
+    background-color: #d1d1d1;
+    padding: 12px 32px;
+    color: white;
+    border-radius: 6%;
+    text-decoration: none;
+}
+.section__btn a:hover{
+    background-color: rgb(116, 116, 116);
+}
+/* header */
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    background-color: white;
+    padding: 16px 32px;
+}
+.header__name{
+    font-size: 28px;
+    margin-top: 1px;
+    margin-left: 40px;
+    font-family:Georgia, Helvetica, sans-serif;
+}
+.header__text {
+    margin-top: 7px;
+    margin-left: 512px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(130, 130, 140);
+}
+.header__btn {
+    margin-top: 7px;
+    margin-left: 40px;
+}
+.header__btn a{
+    background-color: rgb(13, 0, 255);
+    text-decoration: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30%;
+}
+.header__btn a:hover{
+    background-color: rgb(27, 20, 165);
+
+}
+.header__btn a:active{
+    background-color: rgb(17, 13, 92);
+
+}
+/* navbar */
+nav {
+    display: inline-block;
+}
+.nav__items{
+    margin-top: 68px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(232, 232, 232);
+    padding: 12px 100px;
+}
+.nav__item {
+    display: inline-block;
+    margin-right: 56px;
+}
+.nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(94, 94, 94);
+    letter-spacing: 2px;
+}
+.nav__item .active {
+    color: black;
+    font-weight: 600;
+}
+/* sections */
+.section1__heading {
+    font-family: tahoma , serif;
+    margin-top: 18px;
+    margin-left: 620px;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #555555;
+}
+.section1__sub-title {
+    margin-top: 10px;
+    margin-left: 620px;
+    margin-bottom: 24px;
+    color: #8b8b8b;
+    letter-spacing: 3px;
+}
+.section1__anchor {
+    margin-left: 209px;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.section1__anchor a{
+    margin-left: 8px;
+    text-decoration: none;
+    padding: 16px 24px;
+    letter-spacing: 1px;
+    color: rgb(27, 187, 158);
+}
+.section1__anchor a:hover {
+    background-color: rgb(175, 175, 175);
+    border-radius: 15%;
+    color: rgb(8, 82, 68);
+}
+.section1__anchor a i{
+    margin-right: 12px;
+    font-size: 24px;
+    color: rgb(27, 187, 158);
+}
+.section1__image img {
+    margin-right: 176px;
+    margin-left: 176px;
+    width: 70%;
+}
+.section2__images {
+    display: flex;
+    margin-right: 176px;
+    margin-left: 176px;
+}
+.sectiopn2__image{
+    width: 33.3%;
+}
+.section3__image {
+    margin-right: 176px;
+    margin-left: 176px;
+} 
+/* footer */
+footer{
+    background-color: #8b8b8b;
+}
+.f__items{
+    display: inline-block;
+    background-color: #8b8b8b;
+    padding: 20px 60px;
+}
+.f__item  {
+    display: inline-block;
+    margin-right: 60px;
+}
+.f__item a{
+    text-decoration: none;
+    color: #d1d1d1;
+}
+.f__items .active a{
+    color: #505050;
+    font-size: 18px;
+    font-weight: 600;
+}
+.link1 a{
+    margin-left: 56px;
+}
+.f__end {
+    letter-spacing: 1px;
+    color: #414141;
+}
+.f__end a{
+    text-decoration: none;
+    color: #131313;
+}
+/* 
+<footer class="container">
+        <ul class="f__items">
+            <li class="f__item active link1"><a href="index.html">Home</a></li>
+            <li class="f__item"><a href="public.html">Public</a></li>
+            <li class="f__item"><a href="commercial.html">Commercial</a></li>
+            <li class="f__item"><a href="services.html">Services</a></li>
+            <li class="f__item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="f__end">© 2023 by Demi Watson. Proudly created with <a href="https://github.com/Alisher1412/"> Wix.com</a></span>
+</footer>
+ */

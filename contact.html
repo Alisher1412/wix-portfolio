@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiX | Websites</title>
+    <style>
+        /* header */
+        /* core */
+        .container {
+            width: 1360px;
+            margin: 0 auto;
+        }
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        header {
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+            background-color: white;
+            padding: 16px 32px;
+        }
+        .header__name{
+            font-size: 28px;
+            margin-top: 1px;
+            margin-left: 40px;
+            font-family:Georgia, Helvetica, sans-serif;
+        }
+        .header__text {
+            margin-top: 7px;
+            margin-left: 512px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: rgb(130, 130, 140);
+        }
+        .header__btn {
+            margin-top: 7px;
+            margin-left: 40px;
+        }
+        .header__btn a{
+            background-color: rgb(13, 0, 255);
+            text-decoration: none;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30%;
+        }
+        .header__btn a:hover{
+            background-color: rgb(27, 20, 165);
+
+        }
+        .header__btn a:active{
+            background-color: rgb(17, 13, 92);
+
+        }
+        /* navbar */
+        nav {
+            display: inline-block;
+        }
+        .nav__items{
+            margin-top: 68px;
+            margin-left: 200px;
+            margin-right: 200px;
+            background-color: rgb(232, 232, 232);
+            padding: 12px 100px;
+        }
+        .nav__item {
+            display: inline-block;
+            margin-right: 56px;
+        }
+        .nav__item a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgb(94, 94, 94);
+            letter-spacing: 2px;
+        }
+        .nav__item .active {
+            color: black;
+            font-weight: 600;
+        }
+        /* section */
+        .section1__heading {
+            font-family: tahoma , serif;
+            margin-top: 18px;
+            margin-left: 620px;
+            text-transform: uppercase;
+            line-height: 46px;
+            font-size: 32px;
+            font-weight: 600;
+            color: #555555;
+        }
+        .section1__sub-title {
+            margin-top: 10px;
+            margin-left: 620px;
+            margin-bottom: 24px;
+            color: #8b8b8b;
+            letter-spacing: 3px;
+        }
+        .section1__anchor {
+            margin-left: 209px;
+            letter-spacing: 0;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .section1__anchor a{
+            margin-left: 8px;
+            text-decoration: none;
+            padding: 16px 24px;
+            letter-spacing: 1px;
+            color: rgb(27, 187, 158);
+        }
+        .section1__anchor a:hover {
+            background-color: rgb(175, 175, 175);
+            border-radius: 15%;
+            color: rgb(8, 82, 68);
+        }
+        .section1__anchor a i{
+            margin-right: 12px;
+            font-size: 24px;
+            color: rgb(27, 187, 158);
+        }
+        /* section contact */
+            .cs__title {
+                font-size: 44px;
+                color: #555555;
+                font-weight: 600;
+                background-color: #f3fdff;
+                display: inline-block;
+                margin: 60px 44px;
+                padding: 4px;
+                margin-left: 68px;
+            }
+            .mrl130{
+                margin-right: 114px;
+                margin-left: 114px;
+            }
+            .items__1{
+                display: flex;
+                margin-bottom: 40px;
+            }
+            .cs__text{
+                width: 40%;
+                padding: 16px;
+                font-size: 14px;
+                color: #636363;
+                background-color:  #f9feff;
+                margin-right: 64px;
+                line-height: 31px;
+            }
+            .cs__info{
+                width: 40%;
+                font-size: 14px;
+                letter-spacing: 2.5px;
+                padding: 16px;
+                color: #636363;
+                background-color: #f9feff;
+                line-height: 22px;
+            }
+            .colorful{
+                color: #6ba8b2;
+            }
+            .items__2 {
+                display: flex;
+                margin-right: 130px;
+                margin-bottom: 20px;
+            }
+            .items__2 img {
+                width: 40%;
+                padding: 13px;
+            }
+            .cl__items{
+                margin-top: 20px;
+                margin-left: 120px;
+            }
+            .cl__items a i {
+                font-size: 28px;
+                color: black;
+            }
+            .cl__items a i:hover{
+                border: 1px solid rgb(148, 148, 148);
+                background-color: rgb(220, 220, 220);
+                border-radius: 50%;
+                width:  1.75rem;
+                height: 1.75rem;
+            }
+            .cl {
+                margin-left: 20px;
+            }
+            form input {
+                display: block;
+                margin-left: 128px;
+                margin-top: 20px;
+                font-size: 24px;
+                border: 2.25px solid grey;
+                border-radius: 3%;
+            }
+            input:hover{
+                background-color: rgb(208, 208, 208);
+                border:2.25px solid black;
+            }
+            .cs__submit{
+                margin-left: 870px;
+                margin-bottom: 28px;
+            }
+            .cs__submit a{
+                text-decoration: none;
+                font-size: 24px;
+                color: rgb(53, 53, 53);
+                font-weight: 600;
+            }
+            .cs__submit a:hover{                
+                color: rgb(0, 0, 0);
+                font-weight: 700;
+            }
+            /* footer */
+            footer{
+                background-color: #8b8b8b;
+            }
+            .f__items{
+                display: inline-block;
+                background-color: #8b8b8b;
+                padding: 20px 60px;
+            }
+            .f__item  {
+                display: inline-block;
+                margin-right: 60px;
+            }
+            .f__item a{
+                text-decoration: none;
+                color: #d1d1d1;
+            }
+            .f__items .active a{
+                color: #505050;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .link1 a{
+                margin-left: 56px;
+            }
+            .f__end {
+                letter-spacing: 1px;
+                color: #414141;
+            }
+            .f__end a{
+                text-decoration: none;
+                color: #131313;
+            }
+    </style>
+</head>
+<body>    
+    <div class="container">
+        <header>
+            <div class="header__name">WiX</div>
+            <div class="header__text">Click Refresh and Underestimate amazing website</div>
+            <div class="header__btn"><a href="contact.html">Refresh</a></div>
+        </header>
+    </div>
+    <div class="container">
+        <nav>
+            <ul class="nav__items">
+                <li class="nav__item"> <a href="index.html" >Home</a>      </li>
+                <li class="nav__item"> <a href="public.html">Public</a>    </li>
+                <li class="nav__item"> <a href="commercial.html">Commercial</a></li>
+                <li class="nav__item" ><a href="services.html">Services</a>  </li>
+                <li class="nav__item"> <a href="contact.html"class="active">Contact</a>   </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- /Header section -->
+    <div class="container">
+        <div class="section1__heading">Demi <br><span class="indention"></span> Watson</div>
+        <div class="section1__sub-title">Interior Design
+            <span class="section1__anchor"><a href="contact.html"><i class="far fa-address-book"></i>Log In</a></span>
+        </div>
+    </div>
+    <!-- /section -->
+    <div class="container mrl130">
+        <div class="cs__title">Contact</div>
+        <div class="items__1">
+            <div class="cs__text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</div>
+            <div class="cs__info">500 Terry Francois Street <br>San Francisco, CA 94158 <br><span class="colorful">Email</span> _ info@mysite.com  <br> <span class="colorful">Tel</span> _   123-456-7890</div>
+        </div>
+        <div class="items__2">
+            <img src="./contact.jpg" alt="img">
+            <div class="part__2">
+                <div class="cl__items">
+                    <a href="https://github.com/Alisher1412/" class="cl"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Alisher1412/" class="cl"><i class="fab fa-facebook-f"></i></a> 
+                </div>
+               <form action="./server.php">
+                    <input type="text" class="input" placeholder="Name">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="number" class="input" placeholder="Phone">
+                    <input type="text" class="input" placeholder="Subject">
+                    <input type="text" class="input" placeholder="Message">
+                </form>
+            </div>
+        </div>
+        <div class="cs__submit"><a href="index.html">Submit</a></div>
+    </div>
+    <footer class="container">
+        <ul class="f__items">
+            <li class="f__item link1"><a href="index.html">Home</a></li>
+            <li class="f__item"><a href="public.html">Public</a></li>
+            <li class="f__item"><a href="commercial.html">Commercial</a></li>
+            <li class="f__item"><a href="services.html">Services</a></li>
+            <li class="f__item active"><a href="contact.html">Contact</a></li>
+        </ul>
+        <span class="f__end">© 2023 by Demi Watson. Proudly created with <a href="https://github.com/Alisher1412/"> Wix.com</a></span>
+    </footer>
+</body>
+</html>
